@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE1FB9E1244CCADC002E1EB3 /* inside-meTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = CE39E1C7244ABED300DB8795 /* inside-meTests.xctest */; };
 		CE1FB9E2244CCADF002E1EB3 /* inside-meUITests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = CE39E1D2244ABED300DB8795 /* inside-meUITests.xctest */; };
+		CE1FB9E4244CCB34002E1EB3 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = CE1FB9E3244CCB34002E1EB3 /* Readme.md */; };
 		CE39E1B5244ABECF00DB8795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39E1B4244ABECF00DB8795 /* AppDelegate.swift */; };
 		CE39E1B7244ABECF00DB8795 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39E1B6244ABECF00DB8795 /* SceneDelegate.swift */; };
 		CE39E1B9244ABECF00DB8795 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39E1B8244ABECF00DB8795 /* LoginViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE1FB9E3244CCB34002E1EB3 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		CE39E1B1244ABECF00DB8795 /* Inside me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inside me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE39E1B4244ABECF00DB8795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE39E1B6244ABECF00DB8795 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		CE39E1A8244ABECF00DB8795 = {
 			isa = PBXGroup;
 			children = (
+				CE1FB9E3244CCB34002E1EB3 /* Readme.md */,
 				CE39E1B3244ABECF00DB8795 /* inside-me */,
 				CE39E1B2244ABECF00DB8795 /* Products */,
 			);
@@ -221,6 +224,7 @@
 			files = (
 				CE39E1C1244ABED300DB8795 /* LaunchScreen.storyboard in Resources */,
 				CE39E1BE244ABED300DB8795 /* Assets.xcassets in Resources */,
+				CE1FB9E4244CCB34002E1EB3 /* Readme.md in Resources */,
 				CE39E1BC244ABECF00DB8795 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
