@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1FB9E1244CCADC002E1EB3 /* inside-meTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = CE39E1C7244ABED300DB8795 /* inside-meTests.xctest */; };
+		CE1FB9E2244CCADF002E1EB3 /* inside-meUITests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = CE39E1D2244ABED300DB8795 /* inside-meUITests.xctest */; };
 		CE39E1B5244ABECF00DB8795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39E1B4244ABECF00DB8795 /* AppDelegate.swift */; };
 		CE39E1B7244ABECF00DB8795 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39E1B6244ABECF00DB8795 /* SceneDelegate.swift */; };
 		CE39E1B9244ABECF00DB8795 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39E1B8244ABECF00DB8795 /* LoginViewController.swift */; };
 		CE39E1BC244ABECF00DB8795 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE39E1BA244ABECF00DB8795 /* Main.storyboard */; };
 		CE39E1BE244ABED300DB8795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE39E1BD244ABED300DB8795 /* Assets.xcassets */; };
 		CE39E1C1244ABED300DB8795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE39E1BF244ABED300DB8795 /* LaunchScreen.storyboard */; };
-		CE39E1CC244ABED300DB8795 /* inside_meTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39E1CB244ABED300DB8795 /* inside_meTests.swift */; };
-		CE39E1D7244ABED300DB8795 /* inside_meUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39E1D6244ABED300DB8795 /* inside_meUITests.swift */; };
 		CE39E1EA244AD1D200DB8795 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39E1E9244AD1D200DB8795 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,11 +45,7 @@
 		CE39E1C0244ABED300DB8795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE39E1C2244ABED300DB8795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE39E1C7244ABED300DB8795 /* inside-meTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "inside-meTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE39E1CB244ABED300DB8795 /* inside_meTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inside_meTests.swift; sourceTree = "<group>"; };
-		CE39E1CD244ABED300DB8795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE39E1D2244ABED300DB8795 /* inside-meUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "inside-meUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE39E1D6244ABED300DB8795 /* inside_meUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inside_meUITests.swift; sourceTree = "<group>"; };
-		CE39E1D8244ABED300DB8795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE39E1E9244AD1D200DB8795 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				CE39E1B3244ABECF00DB8795 /* inside-me */,
-				CE39E1CA244ABED300DB8795 /* inside-meTests */,
-				CE39E1D5244ABED300DB8795 /* inside-meUITests */,
 				CE39E1B2244ABECF00DB8795 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,24 +104,6 @@
 				CE39E1C2244ABED300DB8795 /* Info.plist */,
 			);
 			path = "inside-me";
-			sourceTree = "<group>";
-		};
-		CE39E1CA244ABED300DB8795 /* inside-meTests */ = {
-			isa = PBXGroup;
-			children = (
-				CE39E1CB244ABED300DB8795 /* inside_meTests.swift */,
-				CE39E1CD244ABED300DB8795 /* Info.plist */,
-			);
-			path = "inside-meTests";
-			sourceTree = "<group>";
-		};
-		CE39E1D5244ABED300DB8795 /* inside-meUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CE39E1D6244ABED300DB8795 /* inside_meUITests.swift */,
-				CE39E1D8244ABED300DB8795 /* Info.plist */,
-			);
-			path = "inside-meUITests";
 			sourceTree = "<group>";
 		};
 		CE39E1E6244AD01400DB8795 /* controllers */ = {
@@ -253,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1FB9E1244CCADC002E1EB3 /* inside-meTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1FB9E2244CCADF002E1EB3 /* inside-meUITests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE39E1CC244ABED300DB8795 /* inside_meTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE39E1D7244ABED300DB8795 /* inside_meUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="siri" translatesAutoresizingMaskIntoConstraints="NO" id="PjD-td-sgO">
-                                <rect key="frame" x="156" y="124" width="102" height="102"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon-insideme" translatesAutoresizingMaskIntoConstraints="NO" id="PjD-td-sgO">
+                                <rect key="frame" x="123.5" y="124" width="167" height="102"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="102" id="oen-sY-jhf"/>
                                 </constraints>
@@ -55,11 +55,11 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="comeIntoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tng-z9-FXX"/>
-                                    <segue destination="4Cd-QP-US9" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="5d7-ro-3JO"/>
+                                    <segue destination="1ZM-2t-DX4" kind="presentation" modalPresentationStyle="fullScreen" id="yrv-Pc-xDT"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PVJ-eP-fol" firstAttribute="top" secondItem="2PN-yQ-hEx" secondAttribute="bottom" constant="5" id="DHA-e5-7jH"/>
                             <constraint firstItem="PjD-td-sgO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="KwS-eq-6yR"/>
@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-906" y="-692"/>
+            <point key="canvasLocation" x="-1494" y="-692"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="zzR-eZ-vlS">
@@ -94,23 +94,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQk-eD-dSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="-376"/>
+            <point key="canvasLocation" x="1370" y="-293"/>
         </scene>
-        <!--Item 1-->
-        <scene sceneID="Kde-xD-KUf">
+        <!--Navigation Controller-->
+        <scene sceneID="nfE-fm-Wyg">
             <objects>
-                <viewController id="hi4-lg-4pK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CJJ-Di-F6H">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="jjs-kS-eXX"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="folder" catalog="system" selectedImage="folder.fill" id="tVa-Dr-78d"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QAp-hr-f6J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="1ZM-2t-DX4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ph3-Dz-CCy"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="98H-hO-A0Q">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4Cd-QP-US9" kind="relationship" relationship="rootViewController" id="ext-HA-3tO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhM-5l-sSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895" y="-1025"/>
+            <point key="canvasLocation" x="-593" y="-692"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PNV-AG-dLF">
@@ -123,19 +124,35 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="hi4-lg-4pK" kind="relationship" relationship="viewControllers" id="546-QD-Lkl"/>
                         <segue destination="gzD-wH-csO" kind="relationship" relationship="viewControllers" id="Zsh-NM-LAr"/>
+                        <segue destination="ISN-uc-9nR" kind="relationship" relationship="viewControllers" id="K2U-R5-bys"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8u-xs-8rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-70" y="-692"/>
+            <point key="canvasLocation" x="339" y="-692"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="UpP-g4-9I6">
+            <objects>
+                <viewController id="ISN-uc-9nR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n2B-u1-tBL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pTJ-OT-Br9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="icloud" catalog="system" selectedImage="icloud.fill" id="Tng-yX-3KW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2B-M1-nKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1370" y="-994"/>
         </scene>
     </scenes>
     <resources>
-        <image name="folder" catalog="system" width="64" height="46"/>
-        <image name="folder.fill" catalog="system" width="64" height="46"/>
-        <image name="siri" width="102" height="102"/>
+        <image name="icloud" catalog="system" width="64" height="44"/>
+        <image name="icloud.fill" catalog="system" width="64" height="44"/>
+        <image name="icon-insideme" width="167" height="167"/>
         <image name="tray" catalog="system" width="64" height="44"/>
         <image name="tray.fill" catalog="system" width="64" height="44"/>
     </resources>
