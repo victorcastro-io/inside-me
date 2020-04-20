@@ -100,6 +100,7 @@
 		CE39E1B3244ABECF00DB8795 /* inside-me */ = {
 			isa = PBXGroup;
 			children = (
+				CE3AF2D7244DCB6700FA7DBC /* views */,
 				CE39E1E6244AD01400DB8795 /* controllers */,
 				CE39E1B4244ABECF00DB8795 /* AppDelegate.swift */,
 				CE39E1B6244ABECF00DB8795 /* SceneDelegate.swift */,
@@ -118,6 +119,13 @@
 				CE39E1E9244AD1D200DB8795 /* HomeViewController.swift */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		CE3AF2D7244DCB6700FA7DBC /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func comeIntoAction(_ sender: Any) {
-        
+        performSegue(withIdentifier: "segueToHome", sender: nil)
     }
         
     @IBAction func AuthBiometricClick(_ sender: Any) {
@@ -43,7 +43,6 @@ class LoginViewController: UIViewController {
         
         let authContext = LAContext()
         let authReason = Bundle.main.infoDictionary?["NSFaceIDUsageDescription"] as! String
-        print(authReason)
         var authError: NSError?
         
         if authContext.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
@@ -57,7 +56,9 @@ class LoginViewController: UIViewController {
                     print("Error auth")
                 }
             })
-        }
+        } else {
+          print(authError?.localizedDescription)
+      }
     }
 }
 
@@ -73,7 +74,6 @@ extension LAContext {
         var error: NSError?
 
         guard self.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
-            // Capture these recoverable error thru Crashlytics
             return .none
         }
 
