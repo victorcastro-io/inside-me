@@ -16,13 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon-insideme" translatesAutoresizingMaskIntoConstraints="NO" id="PjD-td-sgO">
-                                <rect key="frame" x="162" y="104" width="90" height="102"/>
+                                <rect key="frame" x="132" y="104" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="102" id="oen-sY-jhf"/>
+                                    <constraint firstAttribute="width" constant="150" id="flf-Tl-T3P"/>
+                                    <constraint firstAttribute="height" constant="150" id="oen-sY-jhf"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inside me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PN-yQ-hEx">
-                                <rect key="frame" x="107" y="226" width="200" height="41"/>
+                                <rect key="frame" x="107" y="274" width="200" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="i0Q-ka-Dan"/>
                                 </constraints>
@@ -31,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Victor Castro]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVJ-eP-fol">
-                                <rect key="frame" x="144.5" y="272" width="125" height="21"/>
+                                <rect key="frame" x="144.5" y="320" width="125" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="BN5-0I-4n9"/>
                                 </constraints>
@@ -47,7 +48,7 @@
                                     <constraint firstAttribute="width" constant="335" id="d0j-21-tQq"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Come into my mind"/>
+                                <state key="normal" title="Ingresa"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="15"/>
@@ -55,34 +56,18 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="comeIntoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tng-z9-FXX"/>
-                                    <segue destination="1ZM-2t-DX4" kind="presentation" modalPresentationStyle="fullScreen" id="yrv-Pc-xDT"/>
+                                    <segue destination="1ZM-2t-DX4" kind="presentation" identifier="segueToHome" modalPresentationStyle="fullScreen" id="yrv-Pc-xDT"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="js4-mJ-5VZ">
-                                <rect key="frame" x="39.5" y="512" width="335" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="6MK-p2-Qbi"/>
-                                    <constraint firstAttribute="height" constant="60" id="V0C-0B-tge"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is1-5F-yG6">
-                                <rect key="frame" x="39" y="483" width="100" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="ZXm-0Y-H1g"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzD-qW-PiD">
                                 <rect key="frame" x="177" y="682" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="PCi-3K-KRx"/>
                                     <constraint firstAttribute="height" constant="60" id="eyz-sT-Ri2"/>
                                 </constraints>
-                                <state key="normal" title="Face ID / Touch ID" image="fingerprint"/>
+                                <state key="normal" title="Biometric">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="AuthBiometricClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLB-tK-rHL"/>
                                 </connections>
@@ -90,12 +75,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="is1-5F-yG6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="4mk-OI-Akg"/>
                             <constraint firstItem="PVJ-eP-fol" firstAttribute="top" secondItem="2PN-yQ-hEx" secondAttribute="bottom" constant="5" id="DHA-e5-7jH"/>
-                            <constraint firstItem="js4-mJ-5VZ" firstAttribute="top" secondItem="is1-5F-yG6" secondAttribute="bottom" constant="8" id="Ehr-Le-snW"/>
-                            <constraint firstItem="hzD-qW-PiD" firstAttribute="top" secondItem="js4-mJ-5VZ" secondAttribute="bottom" constant="110" id="KuY-MD-jpI"/>
                             <constraint firstItem="PjD-td-sgO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="KwS-eq-6yR"/>
-                            <constraint firstItem="js4-mJ-5VZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M5q-xn-jvA"/>
                             <constraint firstItem="PjD-td-sgO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nqn-Ya-bg8"/>
                             <constraint firstItem="2PN-yQ-hEx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PsA-PU-O3n"/>
                             <constraint firstItem="2PN-yQ-hEx" firstAttribute="top" secondItem="PjD-td-sgO" secondAttribute="bottom" constant="20" id="Ukp-Zo-ERE"/>
@@ -114,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1494.2028985507247" y="-692.41071428571422"/>
+            <point key="canvasLocation" x="-968" y="165"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="zzR-eZ-vlS">
@@ -130,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQk-eD-dSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1370" y="-293"/>
+            <point key="canvasLocation" x="2680" y="-255"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nfE-fm-Wyg">
@@ -150,7 +131,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhM-5l-sSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-593" y="-692"/>
+            <point key="canvasLocation" x="1" y="165"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PNV-AG-dLF">
@@ -169,7 +150,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8u-xs-8rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="339" y="-692"/>
+            <point key="canvasLocation" x="1091" y="165"/>
         </scene>
         <!--Title Cloud-->
         <scene sceneID="UpP-g4-9I6">
@@ -195,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2B-M1-nKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1369.5652173913045" y="-994.41964285714278"/>
+            <point key="canvasLocation" x="2680" y="-994"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Hbi-i9-596">
@@ -211,11 +192,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0J-e0-yD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2480" y="-994"/>
+            <point key="canvasLocation" x="3784" y="-994"/>
         </scene>
     </scenes>
     <resources>
-        <image name="fingerprint" width="741" height="741"/>
         <image name="icloud" catalog="system" width="64" height="44"/>
         <image name="icloud.fill" catalog="system" width="64" height="44"/>
         <image name="icon-insideme" width="90" height="90"/>

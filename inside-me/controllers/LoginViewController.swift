@@ -13,10 +13,11 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var comeInto: UIButton!
     @IBOutlet weak var biometricIdButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        authBiometricLogin()
+        authBiometricID()
     }
 
     @IBAction func comeIntoAction(_ sender: Any) {
@@ -24,24 +25,25 @@ class LoginViewController: UIViewController {
     }
         
     @IBAction func AuthBiometricClick(_ sender: Any) {
-        authBiometricLogin()
+        authBiometricID()
     }
-    
-    func authBiometricLogin() {
+
+    func authBiometricID() {
         let currentType = LAContext().biometricType
         
-        if currentType.rawValue == "touchID" {
-            authenticateUsingTouchID()
-        }
+         switch currentType {
+             case .touchID:
+                 biometricIdButton.setImage(UIImage(named: "biometric_touchid"), for: .normal)
+             
+             case .faceID:
+                 biometricIdButton.setImage(UIImage(named: "biometric_faceid"), for: .normal)
+             default:
+                 biometricIdButton.isHidden = true
+             }
         
-        if currentType.rawValue == "faceID" {
-            authenticateUsingFaceID()
-        }
-    }
-    
-    func authenticateUsingTouchID() {
         let authContext = LAContext()
-        let authReason = "Please uuse TouchID to authenticate"
+        let authReason = Bundle.main.infoDictionary?["NSFaceIDUsageDescription"] as! String
+        print(authReason)
         var authError: NSError?
         
         if authContext.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
@@ -49,19 +51,13 @@ class LoginViewController: UIViewController {
                 if success {
                     DispatchQueue.main.async {
                         print("Authenticated!")
+                        self.performSegue(withIdentifier: "segueToHome", sender: nil)
                     }
                 } else {
                     print("Error auth")
                 }
             })
-        } else {
-            print(authError?.localizedDescription)
-            self.biometricIdButton.isHidden = true
         }
-    }
-    
-    func authenticateUsingFaceID() {
-        print("authenticateUsingFaceID")
     }
 }
 
@@ -83,12 +79,12 @@ extension LAContext {
 
         if #available(iOS 11.0, *) {
             switch self.biometryType {
-            case .touchID:
-                return .touchID
-            case .faceID:
-                return .faceID
-            default:
-                return .none
+                case .touchID:
+                    return .touchID
+                case .faceID:
+                    return .faceID
+                default:
+                    return .none
             }
         } else {
             return self.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) ? .touchID : .none
