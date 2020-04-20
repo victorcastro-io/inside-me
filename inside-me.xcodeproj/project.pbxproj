@@ -83,7 +83,9 @@
 				CE39E1B3244ABECF00DB8795 /* inside-me */,
 				CE39E1B2244ABECF00DB8795 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		CE39E1B2244ABECF00DB8795 /* Products */ = {
 			isa = PBXGroup;

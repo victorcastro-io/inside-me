@@ -97,21 +97,30 @@
             </objects>
             <point key="canvasLocation" x="-968" y="165"/>
         </scene>
-        <!--Item 2-->
+        <!--Home-->
         <scene sceneID="zzR-eZ-vlS">
             <objects>
                 <viewController id="gzD-wH-csO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QyR-ln-xAm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bievenid@, Victor Castro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDd-yl-hE7">
+                                <rect key="frame" x="20" y="131" width="190" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="yIh-IA-YTG"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="tray" catalog="system" selectedImage="tray.fill" id="JxV-Ub-SUe"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="tray" catalog="system" selectedImage="tray.fill" id="JxV-Ub-SUe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQk-eD-dSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2680" y="-255"/>
+            <point key="canvasLocation" x="2645" y="-961"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nfE-fm-Wyg">
@@ -146,6 +155,8 @@
                     <connections>
                         <segue destination="gzD-wH-csO" kind="relationship" relationship="viewControllers" id="Zsh-NM-LAr"/>
                         <segue destination="ISN-uc-9nR" kind="relationship" relationship="viewControllers" id="K2U-R5-bys"/>
+                        <segue destination="1eI-lo-vNE" kind="relationship" relationship="viewControllers" id="qV4-ct-MfR"/>
+                        <segue destination="TIr-yJ-YuE" kind="relationship" relationship="viewControllers" id="kcS-Fa-GoJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8u-xs-8rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -172,11 +183,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="pTJ-OT-Br9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="icloud" catalog="system" selectedImage="icloud.fill" id="Tng-yX-3KW"/>
+                    <tabBarItem key="tabBarItem" title="Documents" image="icloud" catalog="system" selectedImage="icloud.fill" id="Tng-yX-3KW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2B-M1-nKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2680" y="-994"/>
+            <point key="canvasLocation" x="2645" y="-223"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Hbi-i9-596">
@@ -192,13 +203,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0J-e0-yD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3784" y="-994"/>
+            <point key="canvasLocation" x="3694" y="-223"/>
+        </scene>
+        <!--Cuenta-->
+        <scene sceneID="RKW-AH-NWf">
+            <objects>
+                <viewController id="1eI-lo-vNE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rHW-hK-hex">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="47r-gI-Km7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cuenta" image="person.fill" catalog="system" selectedImage="person" id="l20-QU-D3Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ze9-CR-w3t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2645" y="507"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="dCE-jt-0U5">
+            <objects>
+                <viewController id="TIr-yJ-YuE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N4O-iM-gPP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cfj-B8-pYZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="square.grid.2x2.fill" catalog="system" selectedImage="square.grid.2x2" id="K0n-tT-BKM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3E-Dw-V7j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2645" y="1291"/>
         </scene>
     </scenes>
     <resources>
         <image name="icloud" catalog="system" width="64" height="44"/>
         <image name="icloud.fill" catalog="system" width="64" height="44"/>
         <image name="icon-insideme" width="90" height="90"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
+        <image name="square.grid.2x2" catalog="system" width="64" height="56"/>
+        <image name="square.grid.2x2.fill" catalog="system" width="64" height="56"/>
         <image name="tray" catalog="system" width="64" height="44"/>
         <image name="tray.fill" catalog="system" width="64" height="44"/>
     </resources>
