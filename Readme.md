@@ -1,4 +1,11 @@
 
-# Inside me
+# Inside me App
 
-This app is created to develop test with  multiple services, plugins, pods, etc
+Esta App contendrá varias funcionalidades para poner en práctica todo lo parendido por iOS13 y Swift5
+
+### Branchs
+
+#### [feature/TouchID-FaceID](https://github.com/victorcastro-io/inside-me/tree/feature/TouchID-FAceID)
+Generación de un login a travéz de TouchID/FaceID
+
+<img src="https://raw.githubusercontent.com/victorcastro-io/assets/master/iphone11-Login-S1.png" width="300" /> <img src="https://raw.githubusercontent.com/victorcastro-io/assets/master/iphone8-Login-S1.png" width="300" />
